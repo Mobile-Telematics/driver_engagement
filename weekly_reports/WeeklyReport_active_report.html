@@ -1,0 +1,1789 @@
+<!doctype html>
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Damoov</title>
+	<style type="text/css">html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+		}
+
+		@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
+			.table800 {
+				max-width: 800px !important;
+				min-width: 320px !important;
+				width: 100% !important;
+			}
+		}
+
+		@media only screen and (max-device-width: 710px), only screen and (max-width: 710px) {
+			.mob-w100 {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.mob-w93 {
+				width: 93% !important;
+			}
+
+			.mob-fontsize-12 {
+				font-size: 12px !important;
+				line-height: 19px !important;
+			}
+
+			.mob-fontsize-14 {
+				font-size: 14px !important;
+				line-height: 18px !important;
+			}
+
+			.mob-fontsize-16 {
+				font-size: 16px !important;
+				line-height: 21px !important;
+			}
+
+			.mob-fontsize-20 {
+				font-size: 20px !important;
+				line-height: 26px !important;
+			}
+
+			.mob-fontsize-12 {
+				font-size: 12px !important;
+				line-height: 16px !important;
+			}
+
+			.mob-no-border-radius {
+				border-radius: 0 !important;
+			}
+
+			.desktop {
+				display: none !important;
+			}
+
+			.mobile {
+				display: table !important;
+			}
+
+			.mobile-td {
+				display: table-cell !important;
+			}
+
+			.mob-h25 {
+				height: 25px !important;
+				line-height: 25px !important;
+			}
+
+			.mob-h35 {
+				height: 35px !important;
+				line-height: 35px !important;
+			}
+		}
+	</style>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1145.0" style="margin: 0px; padding: 0px; cursor: auto;"><span class="preheader" style="display: none !important; visibility: hidden; opacity: 0; color: #FFFFFF; height: 0; width: 0; font-size: 1px">Your Weekly Driving Digest {{ZrDigestPeriod}} &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</span><!--[if !mso]><!-->
+<div style="font-size:0px;color:transparent;opacity:0">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</div>
+<!--<![endif]-->
+
+<table border="0" cellpadding="0" cellspacing="0" style="font-size: 1px; line-height: normal" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" bgcolor="#F6F8FC"><!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="800"><tr><td><![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" class="table800" style="max-width: 800px; min-width: 800px; width: 800px" width="800">
+				<tbody>
+					<tr>
+						<td align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #D1D3D6"><!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="93%">
+							<tbody>
+								<tr>
+									<td align="center">
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="left"><a href="https://www.damoov.com/telematics-app/" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/logo-1.png" style="display: block; width: 100%; max-width: 142px" width="142" /></a></td>
+												<td width="100"></td>
+												<td align="right"><a href="https://www.damoov.com/" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/logo-2.png" style="display: block; width: 100%; max-width: 150px" width="150" /></a></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td height="10"></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="93%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#265DFB" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div class="mob-fontsize-20" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 24px; line-height: 31px; color: #FFFFFF; font-weight: 500">Your Weekly Driving Digest</div>
+
+												<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #FFFFFF; font-weight: 500">{{ZrDigestPeriod}}</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Activity</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h35" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="306"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 306px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="306">
+													<tbody>
+														<tr>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivityMo}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Mon</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivityTu}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Tue</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivityWe}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Wed</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivityTh}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Thu</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivityFr}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Fri</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivitySa}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Sat</div>
+															</td>
+															<td align="center" width="14%"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-1-{{ZrActivitySu}}.png" style="display: block" width="16" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Sun</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												<!--[if !mso]><!-->
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mobile" style="display: none" width="100%">
+													<tbody>
+														<tr>
+															<td align="center">
+															<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+															<img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-1-mob.png" style="display: block; max-width: 331px; width: 100%" width="331" />
+															<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--<![endif]--></div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="50"><![endif]-->
+
+												<div class="desktop" style="display: inline-block; width: 50px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-1.png" style="display: block" width="1" /></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="288"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 288px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="288">
+													<tbody>
+														<tr>
+															<td></td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">M</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">T</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">W</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">T</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">F</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">S</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">S</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+														</tr>
+														<tr>
+															<td align="left">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Night driving</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdMo}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdTu}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdWe}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdTh}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdFr}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdSa}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityNdSu}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+														</tr>
+														<tr>
+															<td align="left">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Rush hours</div>
+
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhMo}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhTu}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhWe}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhTh}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhFr}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhSa}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityRhSu}}.png" style="display: block" width="22" />
+															<div style="height: 7px; line-height: 7px; font-size: 5px"></div>
+															</td>
+														</tr>
+														<tr>
+															<td align="left">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Day driving</div>
+															</td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdMo}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdTu}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdWe}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdTh}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdFr}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdSa}}.png" style="display: block" width="22" /></td>
+															<td width="7"></td>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-2-{{ZrActivityDdSu}}.png" style="display: block" width="22" /></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Trend</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="219"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 219px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="205">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" style="background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); border-radius: 4px">
+															<table border="0" cellpadding="0" cellspacing="0" width="90%">
+																<tbody>
+																	<tr>
+																		<td align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DFE2ED">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #0E4366">Trips Count:</div>
+
+																		<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 40px; line-height: 52px; color: #265DFB; font-weight: 600">{{ZrTrendTripsCountTotal}}</div>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Previous week</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTripsThisWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Week before</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTripsLastWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTripsBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">App Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTripsAppBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="219"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 219px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="205">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" style="background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); border-radius: 4px">
+															<table border="0" cellpadding="0" cellspacing="0" width="90%">
+																<tbody>
+																	<tr>
+																		<td align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DFE2ED">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #0E4366">Mileage (Mile):</div>
+
+																		<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 40px; line-height: 52px; color: #265DFB; font-weight: 600">{{ZrTrendMileageTotal}}</div>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Previous week</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendMileageThisWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Week before</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendMileageLastWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendMileageBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">App Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendMileageAppBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="219"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 219px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="205">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" style="background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); border-radius: 4px">
+															<table border="0" cellpadding="0" cellspacing="0" width="90%">
+																<tbody>
+																	<tr>
+																		<td align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DFE2ED">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #0E4366">Time Driven (h):</div>
+
+																		<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 40px; line-height: 52px; color: #265DFB; font-weight: 600">{{ZrTrendTimeDrivenTotal}}</div>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center">
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Previous week</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTimeDrivenThisWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Week before</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTimeDrivenLastWeek}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTimeDrivenBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tbody>
+																				<tr>
+																					<td align="left">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">App Best Result</div>
+																					</td>
+																					<td align="right">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #202743">{{ZrTrendTimeDrivenAppBest}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Safety Score</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="410"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 410px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="410">
+													<tbody>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-1.png" style="display: block" width="24" /></td>
+															<td width="15%">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Acceleration</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrSafetyAccelerationScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrSafetyAccelerationScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrSafetyAccelerationScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetyAccelerationScoreTrendColour}}">{{ZrSafetyAccelerationScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="15"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-2.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Braking</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrSafetyBrakingScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrSafetyBrakingScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrSafetyBrakingScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetyBrakingScoreTrendColour}}">{{ZrSafetyBrakingScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="15"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-3.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Cornering</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrSafetyCorneringScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrSafetyCorneringScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrSafetyCorneringScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetyCorneringScoreTrendColour}}">{{ZrSafetyCorneringScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="15"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-4.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Speeding</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrSafetySpeedingScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrSafetySpeedingScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrSafetySpeedingScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetySpeedingScoreTrendColour}}">{{ZrSafetySpeedingScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="15"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-5.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Phone Usage</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrSafetyPhoneUsageScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrSafetyPhoneUsageScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrSafetyPhoneUsageScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetyPhoneUsageScoreTrendColour}}">{{ZrSafetyPhoneUsageScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												<!--[if !mso]><!-->
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mobile" style="display: none" width="100%">
+													<tbody>
+														<tr>
+															<td align="center">
+															<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+															<img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-1-mob.png" style="display: block; max-width: 331px; width: 100%" width="331" />
+															<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--<![endif]--></div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="50"><![endif]-->
+
+												<div class="desktop" style="display: inline-block; width: 50px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-2.png" style="display: block" width="1" /></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="184"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 184px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="184">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" style="background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); border-radius: 4px">
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="26"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-4-{{ZrSafetyOverallScorePic}}.png" style="display: block" width="26" /></td>
+																		<td width="25"></td>
+																		<td align="center" width="90">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 40px; line-height: 52px; color: #202743">{{ZrSafetyOverallScore}}</div>
+
+																		<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="31">
+																			<tbody>
+																				<tr>
+																					<td align="center" bgcolor="#{{ZrSafetyOverallScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrSafetyOverallScoreTrendColour}}">{{ZrSafetyOverallScoreTrend}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Safety Score</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+										<tr><td width="425"><![endif]-->
+									<div class="mob-w100" style="display: inline-block; width: 425px; vertical-align: middle">
+									<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="410">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" height="150" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); height: 150px">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="89%">
+													<tbody>
+														<tr>
+															<td align="left">
+															<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Rewards</div>
+
+															<div style="height: 30px; line-height: 30px; font-size: 8px"></div>
+
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="48"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/coin.png" style="display: block" width="40" /></td>
+																		<td align="left">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 36px; line-height: 47px; color: #265DFB; font-weight: 500">{{ZrRewardsTotalDriveCoins}}</div>
+																		</td>
+																		<td width="20"></td>
+																		<td align="left">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 22px; color: #3C3C3C">This week you&rsquo;ve earned</div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 22px; color: #3C3C3C"><b style="font-size: 18px; color: #25C029">{{ZrRewardsThisWeekDriveCoins}}</b> DriveCoins</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</div>
+									<!--[if (gte mso 9)|(IE)]></td><td width="278"><![endif]-->
+
+									<div class="mob-w100" style="display: inline-block; width: 278px; vertical-align: middle">
+									<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="263">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#265DFB" class="mob-no-border-radius" height="150" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); height: 150px">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="85%">
+													<tbody>
+														<tr>
+															<td align="left">
+															<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #FFFFFF; font-weight: 500">Your Safety Score rank<br />
+															among other drivers</div>
+
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 36px; line-height: 47px; color: #FFFFFF; font-weight: 500">#{{ZrRank}}</div>
+
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</div>
+									<!--[if (gte mso 9)|(IE)]></td></tr>
+										</table><![endif]--></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Eco Score</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="410"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 410px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="410">
+													<tbody>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-6.png" style="display: block" width="24" /></td>
+															<td width="15%">
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Fuel</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrEcoFuelScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrEcoFuelScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrEcoFuelScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrEcoFuelScoreTrendColour}}">{{ZrEcoFuelScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="25"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-7.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Brakes</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrEcoBrakesScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrEcoBrakesScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrEcoBrakesScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrEcoBrakesScoreTrendColour}}">{{ZrEcoBrakesScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="25"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-8.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Tires</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrEcoTiresScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrEcoTiresScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrEcoTiresScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrEcoTiresScoreTrendColour}}">{{ZrEcoTiresScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td height="25"></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-9.png" style="display: block" width="24" /></td>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Cost of Ownership</div>
+															</td>
+															<td width="15"></td>
+															<td><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-3-{{ZrEcoDepreciationScorePic}}.png" style="display: block; max-width: 200px; width: 100%" width="200" /></td>
+															<td width="15"></td>
+															<td>
+															<div class="mob-fontsize-16" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #434558">{{ZrEcoDepreciationScore}}</div>
+															</td>
+															<td width="15"></td>
+															<td>
+															<table border="0" cellpadding="0" cellspacing="0" width="31">
+																<tbody>
+																	<tr>
+																		<td align="center" bgcolor="#{{ZrEcoDepreciationScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrEcoDepreciationScoreTrendColour}}">{{ZrEcoDepreciationScoreTrend}}</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												<!--[if !mso]><!-->
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mobile" style="display: none" width="100%">
+													<tbody>
+														<tr>
+															<td align="center">
+															<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+															<img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-1-mob.png" style="display: block; max-width: 331px; width: 100%" width="331" />
+															<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--<![endif]--></div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="50"><![endif]-->
+
+												<div class="desktop" style="display: inline-block; width: 50px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/line-2.png" style="display: block" width="1" /></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="184"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 184px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="184">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" style="background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); border-radius: 4px">
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="26"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/chart-4-{{ZrEcoOverallScorePic}}.png" style="display: block" width="26" /></td>
+																		<td width="25"></td>
+																		<td align="center" width="90">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 40px; line-height: 52px; color: #202743">{{ZrEcoOverallScore}}</div>
+
+																		<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+
+																		<table border="0" cellpadding="0" cellspacing="0" width="31">
+																			<tbody>
+																				<tr>
+																					<td align="center" bgcolor="#{{ZrEcoOverallScoreTrendColourBack}}" height="13" style="height: 13px; border-radius: 2px">
+																					<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 9px; line-height: 12px; color: #{{ZrEcoOverallScoreTrendColour}}">{{ZrEcoOverallScoreTrend}}</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+
+																		<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #426C87">Eco Score</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #0E4366; font-weight: 500">Statistics</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; padding: 6px 6px 6px 0">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsAccelerationsCountTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsAccelerationsCountThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Accelerations Count</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; padding: 6px">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsBrakingsCountTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsBrakingsCountThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Brakings Count</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; border-right: none; padding: 6px 0 6px 6px">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsCorneringsCountTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsCorneringsCountThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Cornerings Count</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; padding: 6px 6px 6px 0">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsSpeedingMileTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsSpeedingMileThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Speeding (Mile)</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; padding: 6px">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsPhoneUsageMinTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsPhoneUsageMinThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Phone Usage (Min)</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; border-right: none; padding: 6px 0 6px 6px">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsPhoneUsageMileTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsPhoneUsageMileThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Phone Usage (Mile)</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; border-bottom: none; padding: 6px 6px 0 0">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsPhoneUsageSpeedingMinTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsPhoneUsageSpeedingMinThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Phone Usage with Speeding (Min)</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+												<td align="center" style="border: 1px solid #EEF0F6; border-left: none; border-top: none; border-right: none; border-bottom: none; padding: 6px 0 0 6px">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" bgcolor="#F6F9FF" height="64" style="height: 64px; border-radius: 4px; background-image: linear-gradient(224.2deg, #FAFCFF 0.8%, #F1F5FF 98.93%); padding: 6px">
+															<div class="mob-fontsize-14" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 23px; color: #202743">{{ZrStatisticsPhoneUsageSpeedingMileTotal}} <span style="font-size: 14px; color: #A1A5B4">({{ZrStatisticsPhoneUsageSpeedingMileThisWeek}})</span></div>
+
+															<div style="height: 3px; line-height: 3px; font-size: 1px"></div>
+
+															<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #7E88A6">Phone Usage with Speeding (Mile)</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" dir="rtl"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="285"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 285px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" class="mob-w100 mob-no-border-radius" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/pic-1.png" style="display: block; max-width: 285px; width: 100%; border-radius: 0 6px 6px 0" width="285" /></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="401"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 401px; vertical-align: middle">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="100%">
+													<tbody>
+														<tr>
+															<td align="center">
+															<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+															<table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="87%">
+																<tbody>
+																	<tr>
+																		<td dir="ltr">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C">ZenRoad app is to demonstrate the capabilities of <b style="color: #0E4366">Damoov Telematics platform.</b></div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C">All features and services of this app are available via <a href="https://www.damoov.com/telematics-sdk/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">telematics SDK</a>, <a href="https://docs.damoov.com/reference/api-get-started" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">API services</a> as well as other <a href="https://docs.damoov.com/docs/data-export" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">pro data export options</a>, and can be easily used for any other apps.<br />
+																		Also, ZenRoad is open-code and available for customization at no cost both for <a href="https://github.com/Mobile-Telematics/TelematicsApp-iOS" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">iOS</a> and <a href="https://github.com/Mobile-Telematics/TelematicsApp-Android" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">Android</a>. With this, you can launch your ZenRoad-like app with a powerful telematics engine almost instantly.</div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C"><b style="color: #0E4366">To get a full Damoov demo</b></div>
+
+																		<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C">Be sure to sign up at <a href="https://app.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none" target="_blank">DataHub</a> to see the full demo of our platform: Web-Interface, Analytics, APIs, SDKs and so much more.</div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+																		<!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+																				<tr><td width="336"><![endif]-->
+
+																		<table border="0" cellpadding="0" cellspacing="0" style="max-width: 336px; width: 100%" width="336">
+																			<tbody>
+																				<tr>
+																					<td align="center" height="40" style="background-color: #1B82E3; border-radius: 10px; height: 40px" valign="middle"><a href="https://app.damoov.com/" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #FFFFFF; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700" target="_blank">Sign Up</a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if (gte mso 9)|(IE)]></td></tr>
+																				</table><![endif]--></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#305DC2" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1)">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td>
+												<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; font-weight: 700">How to use the app</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF">The app tracks your trips automatically when you start driving. You don&#39;t need to keep the app open or press any buttons. Just start driving. All your trips with statistics and other processed data will be available in the app and our web-interface (sign up at <a href="https://damoov.com" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; text-decoration: none" target="_blank">damoov.com</a> to get the access to it) after several minutes after your ride.</div>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; font-weight: 700">Permissions</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF">To make telematics tracking work, please make sure you correctly granted all required permissions. Just follow the permissions wizard in the app. If you need any assistance, feel free to use the Permissions Guides below or ask for help via support live-chat at <a href="https://damoov.com" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; text-decoration: none" target="_blank">damoov.com</a> (right-bottom of the screen) or right in the app chat.</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+												<!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="200"><![endif]-->
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" style="max-width: 200px; width: 100%" width="200">
+													<tbody>
+														<tr>
+															<td align="center" height="40" style="background-color: #FFFFFF; border-radius: 10px; height: 40px" valign="middle"><a href="https://docs.damoov.com/docs/tools-for-troubleshouting" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #1B82E3; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700" target="_blank">Permissions Guides</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]-->
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</td>
+											</tr>
+											<tr>
+												<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/pic-2.png" style="display: block; max-width: 462px; width: 100%" width="462" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#FFFFFF">
+						<div style="height: 30px; line-height: 30px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td><![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-w93" style="max-width: 690px" width="100%">
+							<tbody>
+								<tr>
+									<td align="center">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%" width="100%">
+										<tbody>
+											<tr>
+												<td align="center"><!--[if (gte mso 9)|(IE)]><table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="210"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 210px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left" width="50%"><a href="https://www.damoov.com/" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/logo-3.png" style="display: block; width: 100%; max-width: 110px" width="110" /></a>
+
+															<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<!--[if !mso]><!-->
+															<td align="left" class="mobile-td" style="display: none">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="30"><a href="https://twitter.com/Voice_of_Damoov" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/tw.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.facebook.com/mydamoov" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/fb.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.linkedin.com/company/damoov/" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/in.png" style="display: block" width="30" /></a></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<!--<![endif]-->
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="300"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 300px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left" width="50%"><a href="https://docs.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">Developer Portal</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://app.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">DataHub</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://docs.damoov.com/discuss" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">Support</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<td align="left"><a href="https://github.com/Mobile-Telematics/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">GitHub</a>
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://telematicssdk.atlassian.net/servicedesk/customer/portal/1" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">Report a Bug</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://www.damoov.com/contact/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none" target="_blank">Contacts</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="170"><![endif]-->
+
+												<div class="desktop" style="display: inline-block; width: 170px; vertical-align: top">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="100%">
+													<tbody>
+														<tr>
+															<td align="right">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="30"><a href="https://twitter.com/Voice_of_Damoov" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/tw.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.facebook.com/mydamoov" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/fb.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.linkedin.com/company/damoov/" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/in.png" style="display: block" width="30" /></a></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</td>
+								</tr>
+								<tr>
+									<td style="border-top-width: 1px; border-top-style: solid; border-top-color: #E5E7ED">
+									<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #777777">Our mailing address is: Global office: Data Motion Holding, Inc. 1887 WHITNEY MESA DR #5857 HENDERSON, NV 89014</div>
+
+									<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #777777">Asia-Pacific region: Data Motion Pte.Ltd 68 CIRCULAR ROAD #02-01, SINGAPORE, 049422.</div>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #999999">Copyright &copy; *2020* Data Motion Holding, inc., All rights reserved.</div>
+
+									<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+					</tr>
+				</tbody>
+			</table>
+			<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+		</tr>
+	</tbody>
+</table>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+</html>

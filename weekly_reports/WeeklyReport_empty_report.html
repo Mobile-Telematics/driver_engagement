@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Damoov</title>
+	<style type="text/css">html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+		}
+
+		@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
+			.table800 {
+				max-width: 800px !important;
+				min-width: 320px !important;
+				width: 100% !important;
+			}
+		}
+
+		@media only screen and (max-device-width: 710px), only screen and (max-width: 710px) {
+			.mob-w100 {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.mob-w93 {
+				width: 93% !important;
+			}
+
+			.mob-fontsize-12 {
+				font-size: 12px !important;
+				line-height: 19px !important;
+			}
+
+			.mob-fontsize-14 {
+				font-size: 14px !important;
+				line-height: 18px !important;
+			}
+
+			.mob-fontsize-16 {
+				font-size: 16px !important;
+				line-height: 21px !important;
+			}
+
+			.mob-fontsize-20 {
+				font-size: 20px !important;
+				line-height: 26px !important;
+			}
+
+			.mob-fontsize-12 {
+				font-size: 12px !important;
+				line-height: 16px !important;
+			}
+
+			.mob-no-border-radius {
+				border-radius: 0 !important;
+			}
+
+			.desktop {
+				display: none !important;
+			}
+
+			.mobile {
+				display: table !important;
+			}
+
+			.mobile-td {
+				display: table-cell !important;
+			}
+
+			.mob-h25 {
+				height: 25px !important;
+				line-height: 25px !important;
+			}
+
+			.mob-h35 {
+				height: 35px !important;
+				line-height: 35px !important;
+			}
+
+			.bg-1 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-1-mob.png) !important;
+				height: 351px !important;
+			}
+
+			.bg-2 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-2-mob.png) !important;
+				height: 639px !important;
+			}
+
+			.bg-3 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-3-mob.png) !important;
+				height: 389px !important;
+			}
+
+			.bg-4 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-4-mob.png) !important;
+				height: 135px !important;
+			}
+
+			.bg-5 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-5-mob.png) !important;
+				height: 139px !important;
+			}
+
+			.bg-6 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-6-mob.png) !important;
+				height: 672px !important;
+			}
+
+			.bg-7 {
+				background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-7-mob.png) !important;
+				height: 427px !important;
+			}
+		}
+	</style>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1145.0" style="margin: 0; padding: 0;"><span class="preheader" style="display: none !important; visibility: hidden; opacity: 0; color: #FFFFFF; height: 0; width: 0; font-size: 1px;">Your Weekly Driving Digest {{ZrDigestPeriod}} &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; </span> <!--[if !mso]><!-->
+<div style="font-size:0px;color:transparent;opacity:0;">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</div>
+<!--<![endif]-->
+
+<table border="0" cellpadding="0" cellspacing="0" style="font-size: 1px; line-height: normal;" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" bgcolor="#F6F8FC"><!--[if (gte mso 9)|(IE)]>
+				<table cellpadding="0" cellspacing="0" border="0" width="800"><tr><td>
+				<![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" class="table800" style="max-width: 800px; min-width: 800px; width: 800px;" width="800">
+				<tbody>
+					<tr>
+						<td align="center" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #D1D3D6;"><!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="93%">
+							<tbody>
+								<tr>
+									<td align="center">
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="left"><a href="https://www.damoov.com/telematics-app/" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/logo-1.png" style="display: block; width: 100%; max-width: 142px;" width="142" /></a></td>
+												<td width="100"></td>
+												<td align="right"><a href="https://www.damoov.com/" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/logo-2.png" style="display: block; width: 100%; max-width: 150px;" width="150" /></a></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1);">
+									<div style="height: 30px; line-height: 30px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]>
+													<table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="310"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 310px; vertical-align: middle;">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/pic-3.png" style="display: block; width: 100%; max-width: 239px;" width="239" /></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="366"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 366px; vertical-align: middle;">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="336">
+													<tbody>
+														<tr>
+															<td>
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #3C3C3C; font-weight: 500;">Hey, we&rsquo;ve lost you.<br />
+															Resume driving to see your<br />
+															detailed statistics!</div>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #777777;">Download Our App:</div>
+
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tbody>
+																	<tr>
+																		<td width="48%">
+																		<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="160">
+																			<tbody>
+																				<tr>
+																					<td align="center" height="40" style="background-color: #1B82E3; border-radius: 10px; height: 40px;" valign="middle"><a href="https://play.google.com/store/apps/details?id=com.telematicssdk.zenroad&amp;hl=en_IN&amp;gl=US" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #FFFFFF; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700;" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/gp.png" style="display: inline-block; vertical-align: middle;" width="24" /> &nbsp;Google Play</a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																		<td width="4%"></td>
+																		<td width="48%">
+																		<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="160">
+																			<tbody>
+																				<tr>
+																					<td align="center" height="40" style="background-color: #1B82E3; border-radius: 10px; height: 40px;" valign="middle"><a href="https://apps.apple.com/jo/app/zenroad/id1563218393" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #FFFFFF; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700;" target="_blank"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/as.png" style="display: inline-block; vertical-align: middle;" width="24" /> &nbsp;App Store</a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<!--[if (gte mso 9)|(IE)]>
+																	<table border="0" cellspacing="0" cellpadding="0">
+																	<tr><td width="336"><![endif]-->
+
+															<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" style="max-width: 336px; width: 100%;" width="336">
+																<tbody>
+																	<tr>
+																		<td align="center" height="40" style="background-color: #1B82E3; border-radius: 10px; height: 40px;" valign="middle"><a href="https://docs.damoov.com/docs/tools-for-troubleshouting" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #FFFFFF; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700;" target="_blank">Permissions Guides</a></td>
+																	</tr>
+																</tbody>
+															</table>
+															<!--[if (gte mso 9)|(IE)]>
+																	</td></tr>
+																	</table><![endif]--></td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</div>
+												<!--[if (gte mso 9)|(IE)]>
+													</td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="93%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#265DFB" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1);">
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+									<table border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="left">
+												<div class="mob-fontsize-20" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 24px; line-height: 31px; color: #FFFFFF; font-weight: 500;">Your Weekly Driving Digest</div>
+
+												<div class="mob-fontsize-12" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 18px; color: #FFFFFF; font-weight: 500;">{{ZrDigestPeriod}}</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-1" height="178" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-1.png); background-position: 50% 50%; background-repeat: no-repeat; height: 178px;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding: 0 30px;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-1.png" style="display: block;" width="40" />
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Activity</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your activity</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-2" height="333" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-2.png); background-position: 50% 50%; background-repeat: no-repeat; height: 333px;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding: 0 30px;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-2.png" style="display: block;" width="40" />
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Trend</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your trends</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-3" height="247" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-3.png); background-position: 50% 50%; background-repeat: no-repeat; height: 247px;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding: 0 30px;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-3.png" style="display: block;" width="40" />
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Safety Score</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your safety score</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" valign="top"><!--[if (gte mso 9)|(IE)]>
+										<table border="0" cellspacing="0" cellpadding="0">
+										<tr><td width="425"><![endif]-->
+									<div class="mob-w100" style="display: inline-block; width: 425px; vertical-align: middle;">
+									<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="410">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-4" height="123" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-4.png); background-position: 50% 50%; background-repeat: no-repeat; height: 123px;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+													<tbody>
+														<tr>
+															<td align="center" style="padding: 0;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-4.png" style="display: block;" width="40" />
+															<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Rewards</div>
+
+															<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your rewards</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</div>
+									<!--[if (gte mso 9)|(IE)]></td><td width="278"><![endif]-->
+
+									<div class="mob-w100" style="display: inline-block; width: 278px; vertical-align: middle;">
+									<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="263">
+										<tbody>
+											<tr>
+												<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-5" height="123" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-5.png); background-position: 50% 50%; background-repeat: no-repeat; height: 123px;">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+													<tbody>
+														<tr>
+															<td align="center" style="padding: 0;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-5.png" style="display: block;" width="40" />
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Safety Score Rank</div>
+
+															<div style="height: 5px; line-height: 5px; font-size: 3px"></div>
+
+															<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your rank</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</div>
+									<!--[if (gte mso 9)|(IE)]>
+										</td></tr>
+										</table><![endif]--></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-3" height="247" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-3.png); background-position: 50% 50%; background-repeat: no-repeat; height: 247px;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding: 0 30px;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-3.png" style="display: block;" width="40" />
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Eco Score</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your eco score</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#F8FAFE" class="mob-no-border-radius bg-7" height="283" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1); border: 6px solid #FFFFFF; background-image: url(https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/bg-7.png); background-position: 50% 50%; background-repeat: no-repeat; height: 283px;">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td align="center" style="padding: 0 30px;"><img alt="" border="0" src="https://website-cliparts-datamotion.s3.us-east-2.amazonaws.com/weekly_emails/icon-7.png" style="display: block;" width="40" />
+												<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 20px; line-height: 26px; color: #0E4366; font-weight: 500;">Statistics</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 25px; color: #999999;">Resume driving to see your detailed statistics</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#FFFFFF" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1);">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td align="center" dir="rtl"><!--[if (gte mso 9)|(IE)]>
+													<table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="285"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 285px; vertical-align: middle;">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left" width="36"><img alt="" border="0" class="mob-w100 mob-no-border-radius" src="https://imgems.ru/damoov/pic-1.png" style="display: block; max-width: 285px; width: 100%; border-radius: 0 6px 6px 0;" width="285" /></td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="401"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 401px; vertical-align: middle;">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="100%">
+													<tbody>
+														<tr>
+															<td align="center">
+															<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+															<table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-w100" width="87%">
+																<tbody>
+																	<tr>
+																		<td dir="ltr">
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C;">ZenRoad app is to demonstrate the capabilities of <b style="color: #0E4366;">Damoov Telematics platform.</b></div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C;">All features and services of this app are available via <a href="https://www.damoov.com/telematics-sdk/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">telematics SDK</a>, <a href="https://docs.damoov.com/reference/api-get-started" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">API services</a> as well as other <a href="https://docs.damoov.com/docs/data-export" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">pro data export options</a>, and can be easily used for any other apps.<br />
+																		Also, ZenRoad is open-code and available for customization at no cost both for <a href="https://github.com/Mobile-Telematics/TelematicsApp-iOS" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">iOS</a> and <a href="https://github.com/Mobile-Telematics/TelematicsApp-Android" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">Android</a>. With this, you can launch your ZenRoad-like app with a powerful telematics engine almost instantly.</div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C;"><b style="color: #0E4366;">To get a full Damoov demo</b></div>
+
+																		<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+																		<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #3C3C3C;">Be sure to sign up at <a href="https://app.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #1B82E3; text-decoration: none;" target="_blank">DataHub</a> to see the full demo of our platform: Web-Interface, Analytics, APIs, SDKs and so much more.</div>
+
+																		<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+																		<!--[if (gte mso 9)|(IE)]>
+																				<table border="0" cellspacing="0" cellpadding="0">
+																				<tr><td width="336"><![endif]-->
+
+																		<table border="0" cellpadding="0" cellspacing="0" style="max-width: 336px; width: 100%;" width="336">
+																			<tbody>
+																				<tr>
+																					<td align="center" height="40" style="background-color: #1B82E3; border-radius: 10px; height: 40px;" valign="middle"><a href="https://app.damoov.com/" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #FFFFFF; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700;" target="_blank">Sign Up</a></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																		<!--[if (gte mso 9)|(IE)]>
+																				</td></tr>
+																				</table><![endif]--></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="mob-h25" style="height: 20px; line-height: 20px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]>
+													</td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+					<tr>
+						<td align="center">
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#305DC2" class="mob-no-border-radius" style="border-radius: 6px; box-shadow: 0px 0px 17px rgba(79, 138, 194, 0.1);">
+									<table align="center" border="0" cellpadding="0" cellspacing="0" width="93%">
+										<tbody>
+											<tr>
+												<td>
+												<div style="height: 25px; line-height: 25px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; font-weight: 700;">How to use the app</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF;">The app tracks your trips automatically when you start driving. You don&#39;t need to keep the app open or press any buttons. Just start driving. All your trips with statistics and other processed data will be available in the app and our web-interface (sign up at <a href="https://damoov.com" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; text-decoration: none;" target="_blank">damoov.com</a> to get the access to it) after several minutes after your ride.</div>
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; font-weight: 700;">Permissions</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+												<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF;">To make telematics tracking work, please make sure you correctly granted all required permissions. Just follow the permissions wizard in the app. If you need any assistance, feel free to use the Permissions Guides below or ask for help via support live-chat at <a href="https://damoov.com" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 18px; color: #FFFFFF; text-decoration: none;" target="_blank">damoov.com</a> (right-bottom of the screen) or right in the app chat.</div>
+
+												<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+												<!--[if (gte mso 9)|(IE)]>
+													<table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="200"><![endif]-->
+
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w100" style="max-width: 200px; width: 100%;" width="200">
+													<tbody>
+														<tr>
+															<td align="center" height="40" style="background-color: #FFFFFF; border-radius: 10px; height: 40px;" valign="middle"><a href="https://docs.damoov.com/docs/tools-for-troubleshouting" style="display: block; width: 100%; height: 40px; font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; color: #1B82E3; font-size: 12px; line-height: 40px; text-decoration: none; white-space: nowrap; font-weight: 700;" target="_blank">Permissions Guides</a></td>
+														</tr>
+													</tbody>
+												</table>
+												<!--[if (gte mso 9)|(IE)]>
+													</td></tr>
+													</table><![endif]-->
+
+												<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+												</td>
+											</tr>
+											<tr>
+												<td align="center"><img alt="" border="0" src="https://imgems.ru/damoov/pic-2.png" style="display: block; max-width: 462px; width: 100%;" width="462" /></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]-->
+
+						<div class="mob-h25" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#FFFFFF">
+						<div style="height: 30px; line-height: 30px; font-size: 8px"></div>
+						<!--[if (gte mso 9)|(IE)]>
+							<table cellpadding="0" cellspacing="0" border="0" width="690"><tr><td>
+							<![endif]-->
+
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-w93" style="max-width: 690px;" width="100%">
+							<tbody>
+								<tr>
+									<td align="center">
+									<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate; width: 100%; max-width: 100%;" width="100%">
+										<tbody>
+											<tr>
+												<td align="center"><!--[if (gte mso 9)|(IE)]>
+													<table border="0" cellspacing="0" cellpadding="0">
+													<tr><td width="210"><![endif]-->
+												<div class="mob-w100" style="display: inline-block; width: 210px; vertical-align: top;">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left"><a href="https://www.damoov.com/" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/logo-3.png" style="display: block; width: 100%; max-width: 110px;" width="110" /></a>
+
+															<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<!--[if !mso]><!-->
+															<td align="left" class="mobile-td" style="display: none;" width="50%">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="30"><a href="https://twitter.com/Voice_of_Damoov" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/tw.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.facebook.com/mydamoov" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/fb.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.linkedin.com/company/damoov/" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/in.png" style="display: block" width="30" /></a></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<!--<![endif]-->
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="300"><![endif]-->
+
+												<div class="mob-w100" style="display: inline-block; width: 300px; vertical-align: top;">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="left" width="50%"><a href="https://docs.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">Developer Portal</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://app.damoov.com/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">DataHub</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://docs.damoov.com/discuss" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">Support</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+															<td align="left"><a href="https://github.com/Mobile-Telematics/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">GitHub</a>
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://telematicssdk.atlassian.net/servicedesk/customer/portal/1" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">Report a Bug</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															<a href="https://www.damoov.com/contact/" style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 16px; color: #1B82E3; text-decoration: none;" target="_blank">Contacts</a>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]></td><td width="170"><![endif]-->
+
+												<div class="desktop" style="display: inline-block; width: 170px; vertical-align: top;">
+												<table border="0" cellpadding="0" cellspacing="0" class="mob-w93" width="100%">
+													<tbody>
+														<tr>
+															<td align="right">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tbody>
+																	<tr>
+																		<td width="30"><a href="https://twitter.com/Voice_of_Damoov" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/tw.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.facebook.com/mydamoov" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/fb.png" style="display: block" width="30" /></a></td>
+																		<td width="15"></td>
+																		<td width="30"><a href="https://www.linkedin.com/company/damoov/" target="_blank"><img alt="" border="0" src="https://imgems.ru/damoov/in.png" style="display: block" width="30" /></a></td>
+																	</tr>
+																</tbody>
+															</table>
+
+															<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</div>
+												<!--[if (gte mso 9)|(IE)]>
+													</td></tr>
+													</table><![endif]--></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+									</td>
+								</tr>
+								<tr>
+									<td style="border-top-width: 1px; border-top-style: solid; border-top-color: #E5E7ED;">
+									<div class="mob-h35" style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #777777;">Our mailing address is: Global office: Data Motion Holding, Inc. 1887 WHITNEY MESA DR #5857 HENDERSON, NV 89014</div>
+
+									<div style="height: 10px; line-height: 10px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #777777;">Asia-Pacific region: Data Motion Pte.Ltd 68 CIRCULAR ROAD #02-01, SINGAPORE, 049422.</div>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+									<div style="height: 15px; line-height: 15px; font-size: 8px"></div>
+
+									<div style="font-family: Roboto, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif; font-size: 10px; line-height: 14px; color: #999999;">Copyright &copy; *2020* Data Motion Holding, inc., All rights reserved.</div>
+
+									<div style="height: 20px; line-height: 20px; font-size: 8px"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+							</td></tr></table>
+							<![endif]--></td>
+					</tr>
+				</tbody>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+				</td></tr></table>
+				<![endif]--></td>
+		</tr>
+	</tbody>
+</table>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body>
+</html>
